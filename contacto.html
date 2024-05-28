@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+ 
+    
+    <title>ISFT 189</title>
+   
+    <link rel="prefetch" href="nosotros.html" as="document">
+    
+    <!--Preload-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <div class="header"></div>
+    <header>  
+        <div class="contenedor">
+            <div class="barra">
+                <div class="logo">
+                    <a href="index.html" > <img src="img/Logo.vacio.blanco.png" alt=""></a>
+                </div>
+
+                <svg class="boton_menu" id="boton" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                
+        
+                <nav class="navegacion" id="nav">
+                        <a href="index.html" class="navegacion__enlace">Inicio</a>
+                        <a href="institucion.html" class="navegacion__enlace">Institución</a>
+                        <a href="carreras.html" class="navegacion__enlace">Carreras</a>
+                        <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                        <a href="http://campus.isft189.edu.ar/moodle/login/index.php" class="navegacion__enlace">Campus</a>      
+                </nav>
+
+                <div id="fecha"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="background_main">
+
+        <div class="contenedor_light_grey border_radius">
+            <h1>Contáctenos</h1>
+        
+            <div class="contenedor_contacto_grid">
+                <div class="contenedor_formulario border_radius">
+                   
+                    <form class="formulario"  action="https://formspree.io/f/mgebpdpd" method="POST">
+                        <h2>Formulario de contacto</h2>
+
+                        <input class="form limpiar" type="text" id="nombre" name="nombre" placeholder="Nombre" required ><br><br>
+                        
+                        
+                        <input class="form limpiar" type="email" id="email" name="email" placeholder="Email" required><br><br>
+                        
+                        
+                        <input class="form limpiar" type="text" id="asunto" name="asunto" placeholder="Asunto" required><br><br>
+                        
+                        
+                        <textarea class="textarea limpiar" id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea><br><br>
+
+                        
+                        <input type="submit" id="enviar" class="boton boton_form">
+
+                    </form>
+                </div>
+                <div class="contenedor_contacto_ubicacion">
+                    <div class="contenedor_mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1463.3564712955977!2d-59.10531797960236!3d-34.57572596821124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc7d87634f6137%3A0x84d9bbf85b3b7579!2sInstituto%20189!5e0!3m2!1ses!2sar!4v1681504320553!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="imagen_mapa border_radius"></iframe>
+                    </div>    
+               </div>      
+        </div>
+       
+    </main>
+
+    <footer class="footer">
+
+        <div class="contenedor_logo_contacto">
+
+            <div class="logo_footer">
+                <div class="contenedor_logo">
+                    <a href="index.html" > <img class="logo2" src="img/Logo.completo.blanco.png" alt=""></a>
+                </div>
+            </div>
+          
+            <div class="barra2">
+                  
+                <div class="contacto">
+                  
+                        <div class="iconos">
+                            <p> 
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                               <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                              </svg>
+                                Hipólito Yrigoyen 1496 , Luján, Buenos Aires.
+                            </p>
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                 <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                                </svg>
+                                Instituto189info@gmail.com
+                            </p>
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                 <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                </svg>
+                                (02323)-436549
+                            </p>
+        
+                        </div>
+        
+    
+                </div>
+            </div>
+
+        </div>
+      
+       
+         
+
+        <p class="desarrollo">Desarrollado por Lucas Mignone y Jean Franco Herrera - ISFT N°189</p> 
+         
+    </footer>
+       
+    <script src="js/script.js"></script>
+</body>
+</html>    

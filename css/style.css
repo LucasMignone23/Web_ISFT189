@@ -1,0 +1,769 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+
+:root {
+    --color-primario: #cdcdcd;
+    --color-secundario: #e5e5e5;
+    --color-terciario: #ffffff;
+    --gris-opaco:#343a40;
+    --azul-opaco: #44687e;
+}
+
+/*GLOBALES*/
+
+
+.contenedor{
+    width: min(90% , 120rem);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+   line-height: 1.2;
+   margin: 0;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   text-align: center;
+}
+
+.centrar_texto{
+    text-align: center;
+}
+
+img{
+   max-width: 100%;
+   height: auto;
+}
+
+.border_radius{
+    border-radius: 2rem;
+}
+
+.ocultar_boton{
+    display: none;
+}
+
+.hr_tamanio{
+    width: 95%;
+    margin: 0 auto;
+    color: var(--color-primario);
+
+}
+
+.hr_color{
+    width: 90%;
+    margin: 0 auto;
+    color: var(--color-secundario);
+}
+
+
+
+/*HEADER*/
+
+
+.header{
+    background-image: url(../img/background_pag.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40rem;
+    background-position: center center;
+    filter: brightness(65%);
+}
+
+
+.contenedor{
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--gris-opaco);
+    max-height: 14rem;
+}
+
+.logo{
+    max-height: 14rem;
+    max-width: 14rem;
+    margin-left: 1rem;
+}
+
+/*NavBar*/
+
+.navegacion{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}  
+
+
+.boton_menu{
+    display: none;
+}
+
+
+#fecha{
+    margin-right: 5rem;
+    display: block;
+    color:var(--color-terciario);
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.navegacion__enlace{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-terciario);
+}
+
+/* Main (Pagina principal)*/
+
+.background_main{
+    background-color:var(--color-primario);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: 100%;
+}
+
+.contenedor_light_grey{
+    background-color: var(--color-secundario);
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 3rem ;
+}
+
+.contenedor_grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 2rem;
+    width: 95%;
+    margin: 0 auto;
+    gap: 1rem;
+    height: 100%;
+}
+
+.contenedor_principal{
+    background-color: var(--color-terciario);
+    text-align: center;
+    height: 100%
+}
+
+.contenedor_principal p{
+    width: 90%;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+}
+
+.contenedor_secundario{
+   height: 100%;
+   display: grid;
+   gap: 2rem;
+}
+
+.redes{
+    background-color: var(--color-terciario);
+    display: flex; 
+    
+}
+
+
+.img_redes{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   max-width: 100%;
+   padding: 1.5rem;
+   
+}
+
+.texto_inicio{
+    padding: 1rem;
+}
+
+.boton{
+    margin: 0 auto;
+    background-color:var(--azul-opaco);
+    height: 5rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    color: var(--color-terciario);
+}
+
+
+
+.texto_inicio p{
+    text-align: center;
+    
+}
+
+.texto_inicio a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.img_inicio{   
+    padding-top: 1rem;   
+    width: 90%;
+    max-height: 100%;
+    padding-bottom: 1rem;
+
+}
+
+
+
+/*Fin Main page (Principal)*/
+
+/*Main Page (Institucion)*/
+
+.contenedor_light_grey3{
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+   
+}
+
+.contenedor_white{
+    background-color: var(--color-terciario);
+    width: 100%;
+    height: 100%;
+}
+
+.banner_institucion{
+    background-image: url(/img/Instituto_noche.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 30rem;
+}
+
+.contenedor_white p{
+    padding-top: 2rem;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 2;
+    font-size: 2rem;
+}
+
+.contenedor_white {
+   padding-bottom: 2rem;
+}
+
+/*Fin Main page (Institucion)*/
+
+/*Main Page (Carreras)*/
+
+
+.contenedor_light_grey2{
+    background-color: var(--color-secundario);
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.contenedor_flex_carreras{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: 70rem;
+}
+
+
+.barra_lateral{
+    margin: 0 auto;
+    background-color: var(--gris-opaco);
+    max-width: 100%;
+    text-align: center;
+    height: 65rem;
+}
+
+.barra_lateral h3{
+    color: var(--color-terciario);
+    padding: 1rem;
+    background-color: var(--azul-opaco);
+}
+
+.img_carreras{
+    padding-top: 2rem;
+    width: 20rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    
+}
+
+.contenedor_carreras{
+    display: grid;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+
+
+.contenedor_carreras a{
+    color: var(--color-terciario);
+}
+
+.contenedor_carreras a:hover{
+    background-color: var(--azul-opaco);
+}
+
+
+.banner_carreras{
+    background-image: url(/img/Carreras.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 27.1rem;
+}
+
+#titulo_carrera{
+    font-size: 2.4rem;
+}
+
+.info_carreras{
+    background-color:var(--color-terciario);
+    max-width: 120rem;
+    height: 37.9rem;
+}
+
+.info_carreras h3{
+    padding-top: 1rem;
+}
+
+.texto_carreras{
+    padding-top: 2rem;
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    line-height: 2;
+}
+
+
+.contenedor_boton{
+    display: flex;
+    padding-top: 2rem ;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton_carreras{
+    background-color: var(--azul-opaco);
+    height: 5rem;
+    width: 20rem;
+    border-radius: 0.5rem;
+    color: var(--color-terciario);
+    padding-top: 0.6rem;
+}
+
+/*Fin Main Page (Carreras)*/
+
+/*Main Page (Contacto)*/
+
+.contenedor_contacto_grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    
+}
+
+.contenedor_contacto_ubicacion{
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    width: 100%;
+    height: 65rem;
+}
+
+
+.contenedor_formulario{
+    background-color: var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 96.5%;
+    margin-left: 2.4rem;
+    margin-top: 1rem;
+    height: 65rem;
+}
+
+.formulario{
+  width: 90%;
+  padding-top: 3rem;
+  text-align: center;
+
+}
+
+.formulario h2{
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+
+.form{  
+   border-color: var(--gris-opaco);
+   border-left: 4rem solid var(--gris-opaco);
+   width: 100%;
+   height: 4rem;
+   outline: none;
+   padding: 1rem;
+   border-radius: 0.8rem;
+
+}
+
+.textarea{
+    border: 0.2rem solid var(--gris-opaco);
+    border-left: 4rem solid var(--gris-opaco);
+    height: 20rem;
+    width: 100%;
+    outline: none;
+    resize: none;
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
+
+.textarea:focus, .form:focus{
+    border:0.2rem solid var(--azul-opaco);
+    border-left: 4rem solid var(--azul-opaco);
+}
+
+
+.contenedor_mapa{
+    height: 65rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+.imagen_mapa{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Fin Main Page (Contacto)*/
+
+
+
+/*Footer*/
+
+.footer{
+    background-color:var(--gris-opaco);
+}
+
+.contenedor_logo_contacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.contenedor_logo{
+    max-height: 14rem;
+    max-width: 14rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.barra2{
+    display: flex;
+    align-items: center;
+    background-color:var(--gris-opaco);
+    max-height: 15rem;
+    justify-content: end;
+}
+
+.contacto{
+    display: flex;
+    align-items: center;
+    margin-right: 5rem;
+    gap: 3rem;
+    font-size: 2rem;
+    margin-top: 2.5rem;
+}
+
+
+.iconos{
+    display: flex;
+    color: var(--color-terciario);
+    align-items: center;
+    gap: 3rem;
+    
+}
+
+.desarrollo{
+    display: flex;
+    color: #63676c ;
+    justify-content: center;
+    border-top: 1px solid #63676c;
+    padding: 1rem;
+    width: 100%;
+    font-weight: bold;
+    
+}
+
+/* Media Query*/
+
+@media(max-width: 834px){
+
+
+    .header{
+        display: none;
+    }
+
+    /*NavBar*/
+    
+    .logo{
+        max-height: 10rem;
+        max-width: 10rem;
+    }
+
+    .navegacion{ 
+        opacity: 0;
+        visibility: hidden;
+        gap: 1.5rem;
+        position: absolute;
+        top: 0 ;
+        right: 0;
+        padding-top: 0.5rem;
+        padding-bottom: 2rem;
+        background-color: #343a40;
+        flex-direction: column;
+        margin-top: 10rem;
+        align-items: center;
+        width: 100%;
+        height: auto;       
+    }
+
+    .nav_visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    
+
+    
+    .boton_menu{
+        display: block;
+        position: static;
+        margin-right: 2rem;
+        color: #ffffff;
+        height: 10rem;
+        width: 4rem;
+    }
+    
+    
+    #fecha{
+        display:none;
+    }
+    /*Fin Navbar*/
+
+    /*Main page (Inicio)*/
+
+    .img_redes{
+       height: auto;
+    }
+
+
+    /*Main page (Institucion)*/
+
+    .contenedor_white p{
+    padding-top: 1rem;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    }
+
+    /*Fin main page (Institucion)*/
+
+    /*Main page (Carreras)*/
+
+    .contenedor_flex_carreras{
+        display: inline;
+    }
+
+    
+   .barra_lateral{
+     height: auto;
+     width: 100%;
+     padding-bottom: 2rem;
+   }
+
+   .info_carreras{
+    height: auto;
+    width: 100%;
+   }
+
+   #titulo_carrera{
+    font-size: 2rem;
+   }
+
+   
+
+
+    /*Main page (Contacto)*/
+    .contenedor_contacto_grid{
+        display: block;
+        margin: 0 auto;
+        height: 130rem;
+        
+    }
+
+    .contenedor_formulario{
+        margin: 0 auto;
+    }
+
+    .boton_form{
+        margin-bottom: 2rem;
+    }
+
+    .contenedor_contacto_ubicacion{
+        display: grid;
+        align-items: center;
+        margin-left: 1.1rem;
+    }
+
+    .contenedor_mapa{
+      width: 96.5%;
+      
+      
+    }
+   
+    /*Fin Contacto*/
+
+    
+   
+
+    /*Footer*/
+
+    .footer{
+        margin: 0 auto;
+    }
+
+
+    .contenedor_logo_contacto{
+        display: inline;
+        align-items: center;
+    }
+
+    .logo_footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -1rem;
+    }
+
+    .barra2{
+      display: inline;
+      text-align: center;
+    }
+
+
+    .logo2{
+        max-height: 15rem;
+        max-width: 15rem;
+    }
+
+
+
+    .contacto{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+    }
+
+    .iconos{
+        display: inline; 
+        text-align: center;     
+        font-size: 1.6rem;
+        color: #ffffff;
+    }
+
+    .desarrollo{
+        font-size: 1rem;
+    }
+
+   /*Main container*/
+   .contenedor_grid{
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+
+
+   
+}
+
+
+@media(min-width: 1023px){
+
+    .background_main{
+        height: 100%;
+    }
+
+
+    .iconos{
+        font-size: 1.6rem;
+    }
+
+    .contenedor_info_carreras{
+        height: 100%;
+    }
+
+    .barra_lateral{
+     min-width:25rem;
+    }
+
+    .info_carreras{
+        width: 100%;
+    }
+    
+
+    #titulo_carrera{
+        font-size: 2rem;
+    }
+}
+
+@media(width: 1024px ){
+
+    .info_carreras{
+        font-size: 1.3rem;
+    }
+   
+}
+
